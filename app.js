@@ -69,7 +69,7 @@ function dataPlanSheets(planLimit, day, usage){
     let isAvg = usage == day * startDailyAvg;
     let dataLeft = planLimit - usage;
     let newDailyAverage = dataLeft / (30 - day);
-    currentDailyAverage = usage / day;
+    let currentDailyAverage = usage / day;
     let outOfData = usage >= planLimit;
     console.log(`${day} days used, ${30 - day} days remaining`);
     console.log(`Average daily use: ${usage / day} GB/day`);
